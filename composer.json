@@ -9,13 +9,12 @@
             "email": "ritoyan@163.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4"
     },
     "autoload": {
         "psr-4": {
-            "Ritoyan\\Pipe\\": "src/"
+            "Aizuyan\\Pipe\\": "src/"
         }
     }
 }

@@ -3,7 +3,7 @@
  *
  *
  */
-namespace Ritoyan\Pipe;
+namespace Aizuyan\Pipe;
 
 class Pipe
 {
