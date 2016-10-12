@@ -1,5 +1,5 @@
 {
-    "name": "ritoyan/pipe",
+    "name": "aizuyan/pipe",
     "description": "This a lib as a fake pipe through callback",
     "type": "library",
     "license": "MIT",
