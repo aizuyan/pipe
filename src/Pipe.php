@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * php对对popen的封装，通过回调的方式模拟管道命令
  *
  */
 namespace Aizuyan\Pipe;
@@ -42,18 +42,24 @@ class Pipe
         return $this;
     }
 
+    /**
+     * 设置数据片段之间的分隔符
+     */
     public function setDelimiter($delimiter)
     {
         $this->delimiter = $delimiter;
         return $this;
     }
 
+    /**
+     * 开始运行
+     */
     public function run()
     {
         $fp = popen($this->command, "r");
 
         if (false === $fp) {
-            throw new Exception("打开命令失败");
+            throw new \RuntimeException("popen execute command failed!");
         }
 
         $item = "";
